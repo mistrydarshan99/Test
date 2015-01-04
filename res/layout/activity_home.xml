@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/gray"
+              android:orientation="vertical">
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/lightGreen">
+        <TextView
+                android:id="@+id/txtScreenName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:paddingRight="3dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:text="Login Demo"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null" >
+        <Button
+                android:id="@+id/btnTourPlan"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="35dp"
+                android:background="@color/darkslate"
+                android:gravity="center"
+                android:text="See User Name"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:onClick="doUserList"
+                android:textStyle="bold" />
+        <Button
+                android:id="@+id/btnTourPlanApproval"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btnTourPlan"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/darkslate"
+                android:gravity="center"
+                android:onClick="doLogout"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>

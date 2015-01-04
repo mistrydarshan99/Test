@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test</string>
+    <string name="hint_userName">Enter UserName</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="hint_email">Enter email</string>
+    <string name="account">Create Account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login Demo</string>
+    <string name="signIn">Sign In</string>
+</resources>

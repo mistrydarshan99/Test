@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:isScrollContainer="true">
+
+    <TextView
+            android:id="@+id/header_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/lightGreen"
+            android:ellipsize="none"
+            android:paddingLeft="15dp"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="@string/account"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/header_title"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:fillViewport="false"
+            android:isScrollContainer="true"
+            android:scrollbars="none">
+
+        <RelativeLayout
+                android:id="@+id/bodyBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true">
+
+            <ImageView
+                    android:id="@+id/ivUserImage"
+                    android:adjustViewBounds="true"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/images"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+            <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/ivUserImage"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_userName"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textNoSuggestions"
+                    android:singleLine="true"
+                    android:textColor="@color/darkslate"
+                    android:textColorHint="@color/darkslate"/>
+
+
+            <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etUsername"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_password"
+                    android:imeOptions="actionNext"
+                    android:inputType="text|textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/darkslate"
+                    android:textColorHint="@color/darkslate"/>
+
+            <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etPassword"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_email"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/darkslate"
+                    android:textColorHint="@color/darkslate"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+            android:id="@+id/btnReset"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkslate"
+            android:gravity="center"
+            android:onClick="doAccount"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="normal"/>
+</RelativeLayout>
